@@ -1,0 +1,38 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/qustions/qustions",
+    "pages/process/process",
+    "pages/contact/contact",
+    "pages/my/my",
+    "custom-tab-bar/index"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "首页",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "custom": true,
+    "list": [
+      {
+        "pagePath": "pages/index/index"
+      },
+      {
+        "pagePath": "pages/qustions/qustions"
+      },
+      {
+        "pagePath": "pages/process/process"
+      },
+      {
+        "pagePath": "pages/contact/contact"
+      },
+      {
+        "pagePath": "pages/my/my"
+      }
+    ]
+  },
+  "usingComponents": {}
+}

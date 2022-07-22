@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "刷题",
+  "enablePullDownRefresh": false,
+  "backgroundColor": "#f0f3f7",
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "mytabbar": "/custom-tab-bar/index"
+  }
+}

@@ -1,0 +1,1 @@
+<view class="content">{{''+selected+''}}<mytabbar vue-id="7e2f0580-1" selected="{{selected}}" bind:__l="__l"></mytabbar></view>
