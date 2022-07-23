@@ -1,6 +1,5 @@
 <template>
 		<view class="container">
-			<image class="image-bg" src="../../static/bg.png" />
 			<view class="header">
 				<view class="home_title">小鹿前端学院</view>
 				<view class="home_school">入学信息入口</view>
@@ -9,48 +8,44 @@
 					<image class="home_img" src="../../static/fangda.png"></image>
 				</view>
 			</view>
-			<view class="items">
-				<view class="item">
-					<image src="../../static/itemsthree.jpeg"></image>
-				</view>
-				<view class="item">
-					<image src="../../static/itemone.png"></image>
-				</view>
-				<view class="item">
-					<image src="../../static/itemsfour.png"></image>
-				</view>
-				<view class="item">
-					<image src="../../static/items.png"></image>
-				</view>
-				<view class="item">
-					<image src="../../static/itemone.png"></image>
-				</view>
-				<view class="item">
-					<image src="../../static/itemsthree.jpeg" ></image>
-				</view>
-			</view>
+			<scroll-view  scroll-y="true" class="scroll-Y" :style="{height:clientheight+'px'}">
+				<classitems></classitems>
+			</scroll-view>
 			<Mytabbar :selected="selected" ></Mytabbar>
 		</view>
-		
-	
 </template>
 
 <script>
 	import Mytabbar from '../../custom-tab-bar/index.vue'
+	import classitems from '../items/items.vue'
 	export default {
 		data() {
 			return {
-				selected:0 
+				selected:0 ,
+				clientheight:0
 			}
 		},
 		onLoad() {
 			
 		},
 		components:{
-			Mytabbar
+			Mytabbar,
+			classitems
 		},
 		methods: {
 
+		},
+		onReady() {
+			uni.getSystemInfo({
+				success:(res)=>{
+					let info = uni.createSelectorQuery().in(this).select('.header');
+					info.boundingClientRect((data)=>{
+						
+						this.clientheight = res.windowHeight - data.height -150 ;
+					}).exec(function(res){});
+				}
+			})
+			
 		}
 	}
 </script>
@@ -59,6 +54,9 @@
 	
 .container{
 	width: 750rpx;
+	height: 100%;
+	background: url('https://fawn.xuexiluxian.cn/api/profile/wechat/bgimg/bg.png') no-repeat;
+	background-size: cover;
 }
 .header{
 	padding-left: 30rpx;
@@ -103,25 +101,12 @@
 	height: 40rpx;
 	margin-left: 48rpx;
 }
-.items{
-	width: 750rpx;
-	display: flex;
-	flex-direction: row;
-	flex-wrap:wrap;
-	justify-content:space-evenly;
-	margin-top: 20rpx;
-	padding-bottom: 130rpx;
-}
-
-.item {
-	width: 330rpx;
-	height: 450rpx;
-	margin-top: 20rpx;
-	border-radius: 12px;
-	image{
-		width: 330rpx;
-		height: 450rpx;
-		border-radius: 12rpx;
+.scroll-Y {
+		height: 870rpx;
+		width: 750rpx;
+		margin-top: 26rpx;
 	}
-}
+
+
+
 </style>

@@ -2,6 +2,7 @@
   "navigationBarTitleText": "首页",
   "navigationStyle": "custom",
   "usingComponents": {
-    "mytabbar": "/custom-tab-bar/index"
+    "mytabbar": "/custom-tab-bar/index",
+    "classitems": "/pages/items/items"
   }
 }

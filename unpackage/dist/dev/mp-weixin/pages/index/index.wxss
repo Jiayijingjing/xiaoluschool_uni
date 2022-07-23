@@ -108,6 +108,9 @@
 /* 文章场景相关 */
 .container.data-v-57280228 {
   width: 750rpx;
+  height: 100%;
+  background: url("https://fawn.xuexiluxian.cn/api/profile/wechat/bgimg/bg.png") no-repeat;
+  background-size: cover;
 }
 .header.data-v-57280228 {
   padding-left: 30rpx;
@@ -151,24 +154,9 @@
   height: 40rpx;
   margin-left: 48rpx;
 }
-.items.data-v-57280228 {
+.scroll-Y.data-v-57280228 {
+  height: 870rpx;
   width: 750rpx;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  margin-top: 20rpx;
-  padding-bottom: 130rpx;
-}
-.item.data-v-57280228 {
-  width: 330rpx;
-  height: 450rpx;
-  margin-top: 20rpx;
-  border-radius: 12px;
-}
-.item image.data-v-57280228 {
-  width: 330rpx;
-  height: 450rpx;
-  border-radius: 12rpx;
+  margin-top: 26rpx;
 }
 

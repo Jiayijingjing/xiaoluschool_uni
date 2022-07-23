@@ -138,27 +138,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;
 
 
 
@@ -193,27 +173,21 @@ var _index = _interopRequireDefault(__webpack_require__(/*! ../../custom-tab-bar
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-var _default = { data: function data() {return { selected: 0 };}, onLoad: function onLoad() {}, components: { Mytabbar: _index.default }, methods: {} };exports.default = _default;
+var classitems = function classitems() {__webpack_require__.e(/*! require.ensure | pages/items/items */ "pages/items/items").then((function () {return resolve(__webpack_require__(/*! ../items/items.vue */ 52));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default = { data: function data() {return { selected: 0, clientheight: 0 };}, onLoad: function onLoad() {}, components: { Mytabbar: _index.default, classitems: classitems }, methods: {},
+
+  onReady: function onReady() {var _this = this;
+    uni.getSystemInfo({
+      success: function success(res) {
+        var info = uni.createSelectorQuery().in(_this).select('.header');
+        info.boundingClientRect(function (data) {
+
+          _this.clientheight = res.windowHeight - data.height - 150;
+        }).exec(function (res) {});
+      } });
+
+
+  } };exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
 /* 18 */
