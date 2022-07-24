@@ -173,7 +173,25 @@ var _index = _interopRequireDefault(__webpack_require__(/*! ../../custom-tab-bar
 //
 //
 //
-var classitems = function classitems() {__webpack_require__.e(/*! require.ensure | pages/items/items */ "pages/items/items").then((function () {return resolve(__webpack_require__(/*! ../items/items.vue */ 52));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default = { data: function data() {return { selected: 0, clientheight: 0 };}, onLoad: function onLoad() {}, components: { Mytabbar: _index.default, classitems: classitems }, methods: {},
+var classitems = function classitems() {__webpack_require__.e(/*! require.ensure | pages/items/items */ "pages/items/items").then((function () {return resolve(__webpack_require__(/*! ../items/items.vue */ 68));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default = { data: function data() {return { selected: 0, clientheight: 0 };}, onLoad: function onLoad() {// https://fawn.xuexiluxian.cn/api/profile/wechat/bgimg/title.png
+    // https://fawn.xuexiluxian.cn/api/profile/wechat/bgimg/sign-bg.png
+    // https://fawn.xuexiluxian.cn/api/profile/wechat/bgimg/sign-bg-title.png
+    // https://fawn.xuexiluxian.cn/api/profile/wechat/bgimg/item-bg.png
+    // https://fawn.xuexiluxian.cn/api/profile/wechat/bgimg/sign-bg-footer.png
+    // https://fawn.xuexiluxian.cn/api/profile/wechat/bgimg/banner.png
+    // https://fawn.xuexiluxian.cn/api/profile/wechat/bgimg/pop-bg.png
+    // https://fawn.xuexiluxian.cn/api/profile/wechat/bgimg/fame-bg.png
+  }, components: { Mytabbar: _index.default, classitems: classitems }, methods: { goshowcontract: function goshowcontract() {uni.navigateTo({
+        url: '../showcontract/showcontract' });
+
+
+    },
+    goadmissions: function goadmissions() {
+      uni.navigateTo({
+        url: '../asmissionform/asmissionform' });
+
+
+    } },
 
   onReady: function onReady() {var _this = this;
     uni.getSystemInfo({

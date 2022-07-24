@@ -1,1 +1,1 @@
-<view class="content">{{''+selected+''}}<mytabbar vue-id="af278c40-1" selected="{{selected}}" bind:__l="__l"></mytabbar></view>
+<view class="content data-v-05a67834" catchtouchmove="true"><image class="imgss data-v-05a67834" src="../../static/itemsfour.png"></image><mytabbar vue-id="af278c40-1" selected="{{selected}}" class="data-v-05a67834" bind:__l="__l"></mytabbar></view>

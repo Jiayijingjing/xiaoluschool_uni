@@ -69,6 +69,42 @@
             }
             
         }
+        ,{
+            "path" : "pages/showcontract/showcontract",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "协议说明",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/classdatail/classdatail",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "班级主页",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/asmissionform/asmissionform",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "入学信息填写",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/detailtwo/detailtwo",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",

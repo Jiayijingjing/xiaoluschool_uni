@@ -1,13 +1,6 @@
 <template>
-	<view class="classes">
+	<view class="classes" @tap="godatail">
 		<itemclass v-for="(item,index) in list" :key="index" :urls="item"></itemclass>
-		<!-- <itemclass></itemclass>
-		<itemclass></itemclass>
-		<itemclass></itemclass>
-		<itemclass></itemclass>
-		<itemclass></itemclass>
-		<itemclass></itemclass>
-		<itemclass></itemclass> -->
 	</view>
 </template>
 
@@ -16,11 +9,18 @@
 	export default {
 		data() {
 			return {
-				list:['../../static/itemsthree.png','../../static/itemsfour.png','../../static/items.png','../../static/itemone.png','../../static/itemsfour.png','../../static/itemsthree.png','../../static/itemstwo.png','../../static/items.png']
+				list:['../../static/itemsthree.png','../../static/itemsfour.png','../../static/items.png','../../static/itemone.png','../../static/itemsfour.png','../../static/itemsthree.png','../../static/itemstwo.png','../../static/items.png','../../static/itemsfour.png','../../static/itemsthree.png','../../static/itemstwo.png','../../static/items.png']
 			};
 		},
 		components:{
 			itemclass
+		},
+		methods:{
+			godatail(){
+				uni.navigateTo({
+					url:'../classdatail/classdatail'
+				})
+			}
 		}
 	}
 </script>

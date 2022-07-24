@@ -1,6 +1,6 @@
 <template>
-	<view class="content">
-		{{selected}}
+	<view class="content" catchtouchmove='true'>
+		<image src="../../static/items.png" class="imgss"></image>
 		<Mytabbar :selected="selected"></Mytabbar>
 	</view>
 </template>
@@ -19,6 +19,9 @@
 	}
 </script>
 
-<style lang="scss">
-
+<style lang="scss" scoped>
+.imgss{
+	width: 750rpx;
+	height: 100vh;
+}
 </style>

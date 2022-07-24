@@ -1,1 +1,1 @@
-<view class="classes data-v-14c50448"><block wx:for="{{list}}" wx:for-item="item" wx:for-index="index" wx:key="index"><itemclass vue-id="{{'f847f484-1-'+index}}" urls="{{item}}" class="data-v-14c50448" bind:__l="__l"></itemclass></block></view>
+<view data-event-opts="{{[['tap',[['godatail',['$event']]]]]}}" class="classes data-v-14c50448" bindtap="__e"><block wx:for="{{list}}" wx:for-item="item" wx:for-index="index" wx:key="index"><itemclass vue-id="{{'f847f484-1-'+index}}" urls="{{item}}" class="data-v-14c50448" bind:__l="__l"></itemclass></block></view>

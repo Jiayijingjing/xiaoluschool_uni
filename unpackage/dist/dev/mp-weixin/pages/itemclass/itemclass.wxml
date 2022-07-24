@@ -1,1 +1,1 @@
-<view class="item data-v-56cc5adc"><image src="{{urls}}" class="data-v-56cc5adc"></image></view>
+<view class="item data-v-56cc5adc"><image class="itemimg data-v-56cc5adc" src="{{urls}}"></image></view>

@@ -30,7 +30,7 @@
   margin-bottom: 20rpx;
   border-radius: 12px;
 }
-.item image.data-v-56cc5adc {
+.itemimg.data-v-56cc5adc {
   width: 330rpx;
   height: 450rpx;
   border-radius: 12rpx;
